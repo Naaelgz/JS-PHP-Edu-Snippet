@@ -1,0 +1,62 @@
+{
+  "name": "edu-snippet-js-php",
+  "displayName": "Edu Snippet JS & PHP",
+  "description": "Snippet edukatif untuk JavaScript dan PHP dengan penjelasan konsep dan perbandingan antar bahasa. Cocok untuk mahasiswa dan pemula programming.",
+  "version": "1.4.0",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Snippets",
+    "Education"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "edu-snippet.showSnippetList",
+        "title": "Edu Snippet: Lihat Daftar Semua Snippet"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript-advanced.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript-php-compare.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/php.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/php-oop.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/javascript-php-compare.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.2",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
