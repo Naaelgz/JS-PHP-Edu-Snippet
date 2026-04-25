@@ -29,20 +29,12 @@
         "path": "./snippets/javascript-advanced.json"
       },
       {
-        "language": "javascript",
-        "path": "./snippets/javascript-php-compare.json"
-      },
-      {
         "language": "php",
         "path": "./snippets/php.json"
       },
       {
         "language": "php",
         "path": "./snippets/php-oop.json"
-      },
-      {
-        "language": "php",
-        "path": "./snippets/javascript-php-compare.json"
       }
     ]
   },

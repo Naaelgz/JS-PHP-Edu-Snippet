@@ -2,17 +2,16 @@
 
 Extension Visual Studio Code yang menyediakan snippet edukatif untuk JavaScript dan PHP, dilengkapi penjelasan konsep, best practice, dan perbandingan antar bahasa.
 
-## Fitur
+## 🚀 Fitur
 
 - **21 Snippet JavaScript Dasar** — variabel hingga array map/filter
 - **12 Snippet JavaScript Advanced** — Class ES6, Promise, async/await, destructuring, spread/rest, template literals, map, filter
 - **21 Snippet PHP Dasar** — variabel hingga array map/filter
 - **7 Snippet PHP OOP** — Class, Constructor, Encapsulation, Inheritance, Polymorphism, Interface, Abstract
 - **11 Snippet PHP Advanced** — Namespace, use, try-catch, PDO database, traits
-- **12 Compare Snippet** — perbandingan JS vs PHP dengan contoh kode nyata
 - **Command Daftar Snippet** — lihat semua prefix sekaligus via Command Palette
 
-## Cara Pakai
+## ⚡ Cara Pakai
 
 1. Buka file `.js` atau `.php`
 2. Ketik prefix (contoh: `edu-var`)
@@ -21,7 +20,7 @@ Extension Visual Studio Code yang menyediakan snippet edukatif untuk JavaScript 
 
 Untuk melihat semua prefix: `Ctrl+Shift+P` → **"Edu Snippet: Lihat Daftar Semua Snippet"**
 
-## Daftar Prefix
+## 📚 Daftar Prefix
 
 ### JavaScript & PHP (prefix sama, output beda)
 | Prefix | Topik |
@@ -50,7 +49,7 @@ Untuk melihat semua prefix: `Ctrl+Shift+P` → **"Edu Snippet: Lihat Daftar Semu
 ### JavaScript Only
 | Prefix | Topik |
 |---|---|
-| `edu-array-foreach` | forEach loop |
+| `edu-array-foreach` | ForEach loop |
 
 ### JavaScript Advanced
 | Prefix | Topik |
@@ -97,23 +96,7 @@ Untuk melihat semua prefix: `Ctrl+Shift+P` → **"Edu Snippet: Lihat Daftar Semu
 | `edu-trait` | Trait dasar |
 | `edu-trait-multiple` | Multiple traits |
 
-### Compare JS vs PHP (aktif di file .js dan .php)
-| Prefix | Topik |
-|---|---|
-| `edu-compare-var` | Perbandingan variabel |
-| `edu-compare-datatype` | Perbandingan tipe data |
-| `edu-compare-operator` | Perbandingan operator |
-| `edu-compare-if` | Perbandingan if statement |
-| `edu-compare-switch` | Perbandingan switch |
-| `edu-compare-loop` | Perbandingan loop |
-| `edu-compare-break` | Perbandingan break & continue |
-| `edu-compare-array` | Perbandingan array |
-| `edu-compare-func` | Perbandingan function |
-| `edu-compare-object` | Perbandingan object |
-| `edu-compare-output` | Perbandingan output |
-| `edu-compare-exec` | Perbandingan eksekusi |
-
-## Target Pengguna
+## 🎯 Target Pengguna
 
 - Mahasiswa yang belajar pemrograman dasar hingga menengah
 - Pemula yang baru mengenal JS atau PHP

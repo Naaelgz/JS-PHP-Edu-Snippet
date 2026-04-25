@@ -39,7 +39,6 @@
     ],
     "description": "Promise dasar JavaScript + penjelasan"
   },
-
   "JS Advanced - Async Await": {
     "scope": "javascript",
     "prefix": "edu-async",
@@ -82,7 +81,6 @@
     ],
     "description": "Async/await JavaScript + penjelasan lengkap"
   },
-
   "JS Advanced - Destructuring Object": {
     "scope": "javascript",
     "prefix": "edu-destructure-obj",
@@ -121,7 +119,6 @@
     ],
     "description": "Object destructuring JavaScript + penjelasan"
   },
-
   "JS Advanced - Destructuring Array": {
     "scope": "javascript",
     "prefix": "edu-destructure-arr",
@@ -162,7 +159,6 @@
     ],
     "description": "Array destructuring JavaScript + penjelasan"
   },
-
   "JS Advanced - Spread Operator": {
     "scope": "javascript",
     "prefix": "edu-spread",
@@ -204,7 +200,6 @@
     ],
     "description": "Spread operator JavaScript + penjelasan"
   },
-
   "JS Advanced - Rest Parameter": {
     "scope": "javascript",
     "prefix": "edu-rest",
@@ -243,7 +238,6 @@
     ],
     "description": "Rest parameter JavaScript + penjelasan"
   },
-
   "JS Advanced - Template Literals": {
     "scope": "javascript",
     "prefix": "edu-template",
@@ -285,7 +279,6 @@
     ],
     "description": "Template literals JavaScript + penjelasan lengkap"
   },
-
   "JS Advanced - Promise Chain": {
     "scope": "javascript",
     "prefix": "edu-promise-chain",
@@ -321,7 +314,7 @@
       "// .catch() menangkap error dari promise manapun di chain",
       "",
       "// ======================================",
-      "// ALTERNATIF DENGAN ASYNC/AWAIT",
+      "// PERBANDINGAN DENGAN ASYNC/AWAIT",
       "// ======================================",
       "// async function run() {",
       "//   const r1 = await step1();",
@@ -331,7 +324,6 @@
     ],
     "description": "Promise chaining + penjelasan"
   },
-
   "JS Advanced - Promise All": {
     "scope": "javascript",
     "prefix": "edu-promise-all",
@@ -367,7 +359,7 @@
       "// Lebih cepat daripada await satu per satu",
       "",
       "// ======================================",
-      "// ALTERNATIF LAIN",
+      "// PERBANDINGAN DENGAN ALTERNATIF LAIN",
       "// ======================================",
       "// Promise.allSettled() - tunggu semua, terlepas sukses/gagal",
       "// Promise.race()       - ambil yang paling cepat",
@@ -375,7 +367,6 @@
     ],
     "description": "Promise.all untuk parallel execution + penjelasan"
   },
-
   "JS Advanced - Class ES6": {
     "scope": "javascript",
     "prefix": "edu-js-class",
@@ -447,7 +438,6 @@
     ],
     "description": "Class ES6 JavaScript + inheritance + penjelasan"
   },
-
   "JS Advanced - Array Map": {
     "scope": "javascript",
     "prefix": "edu-map",
@@ -492,7 +482,6 @@
     ],
     "description": "Array map JavaScript + penjelasan + perbandingan PHP"
   },
-
   "JS Advanced - Array Filter": {
     "scope": "javascript",
     "prefix": "edu-filter",

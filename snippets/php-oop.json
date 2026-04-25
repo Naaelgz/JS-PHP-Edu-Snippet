@@ -43,7 +43,6 @@
     ],
     "description": "PHP OOP Class dasar dengan penjelasan + tab stops"
   },
-
   "Edu PHP Constructor (OOP)": {
     "scope": "php",
     "prefix": "edu-php-construct",
@@ -90,7 +89,6 @@
     ],
     "description": "PHP constructor dengan best practice + tab stops"
   },
-
   "Edu PHP Encapsulation (OOP)": {
     "scope": "php",
     "prefix": "edu-php-encap",
@@ -151,7 +149,6 @@
     ],
     "description": "Encapsulation PHP dengan getter setter + tab stops"
   },
-
   "Edu PHP Inheritance (OOP)": {
     "scope": "php",
     "prefix": "edu-php-inherit",
@@ -213,7 +210,6 @@
     ],
     "description": "Inheritance PHP dengan contoh sederhana + tab stops"
   },
-
   "Edu PHP Polymorphism (OOP)": {
     "scope": "php",
     "prefix": "edu-php-poly",
@@ -276,7 +272,6 @@
     ],
     "description": "Polymorphism PHP dengan contoh praktis + tab stops"
   },
-
   "Edu PHP Interface (OOP)": {
     "scope": "php",
     "prefix": "edu-php-interface",
@@ -351,7 +346,6 @@
     ],
     "description": "Interface PHP + penjelasan lengkap"
   },
-
   "Edu PHP Abstract Class (OOP)": {
     "scope": "php",
     "prefix": "edu-php-abstract",
@@ -445,7 +439,6 @@
     ],
     "description": "Abstract class PHP + penjelasan lengkap"
   },
-
   "PHP Advanced - Namespace Basic": {
     "scope": "php",
     "prefix": "edu-namespace",
@@ -495,7 +488,6 @@
     ],
     "description": "Namespace dasar PHP + penjelasan"
   },
-
   "PHP Advanced - Use Statement": {
     "scope": "php",
     "prefix": "edu-use",
@@ -553,7 +545,6 @@
     ],
     "description": "Use statement PHP + penjelasan lengkap"
   },
-
   "PHP Advanced - Try Catch Basic": {
     "scope": "php",
     "prefix": "edu-try-catch",
@@ -612,7 +603,6 @@
     ],
     "description": "Try-catch error handling PHP + penjelasan"
   },
-
   "PHP Advanced - Custom Exception": {
     "scope": "php",
     "prefix": "edu-custom-exception",
@@ -683,7 +673,6 @@
     ],
     "description": "Custom exception class PHP + penjelasan"
   },
-
   "PHP Advanced - PDO Connection": {
     "scope": "php",
     "prefix": "edu-pdo-connect",
@@ -734,7 +723,6 @@
     ],
     "description": "PDO database connection + penjelasan"
   },
-
   "PHP Advanced - PDO Query Select": {
     "scope": "php",
     "prefix": "edu-pdo-select",
@@ -742,6 +730,14 @@
       "// ======================================",
       "// PHP - PDO SELECT QUERY",
       "// ======================================",
+      "",
+      "// ======================================",
+      "// PENJELASAN",
+      "// ======================================",
+      "// Gunakan prepared statement untuk keamanan",
+      "// Parameter binding mencegah SQL injection",
+      "// fetchAll() ambil semua baris, fetch() ambil 1 baris",
+      "",
       "",
       "// Prepared statement (RECOMMENDED)",
       "$${1:sql} = \"SELECT * FROM ${2:users} WHERE ${3:id} = :${4:id}\";",
@@ -772,7 +768,7 @@
       "// rowCount()    - hitung jumlah row",
       "",
       "// ======================================",
-      "// SQL INJECTION (BAHAYA!)",
+      "// ⚠️ COMMON MISTAKE",
       "// ======================================",
       "// JANGAN: $sql = \"SELECT * FROM users WHERE id = $_GET[id]\";",
       "// Bisa diserang: ?id=1 OR 1=1",
@@ -780,7 +776,6 @@
     ],
     "description": "PDO SELECT query dengan prepared statement + penjelasan"
   },
-
   "PHP Advanced - PDO Insert": {
     "scope": "php",
     "prefix": "edu-pdo-insert",
@@ -824,7 +819,6 @@
     ],
     "description": "PDO INSERT dengan prepared statement + penjelasan"
   },
-
   "PHP Advanced - PDO Update Delete": {
     "scope": "php",
     "prefix": "edu-pdo-update",
@@ -832,6 +826,14 @@
       "// ======================================",
       "// PHP - PDO UPDATE & DELETE",
       "// ======================================",
+      "",
+      "// ======================================",
+      "// PENJELASAN",
+      "// ======================================",
+      "// UPDATE mengubah data yang sudah ada",
+      "// DELETE menghapus data secara permanen",
+      "// rowCount() mengembalikan jumlah baris yang terpengaruh",
+      "",
       "",
       "// 1. UPDATE DATA",
       "try {",
@@ -864,20 +866,19 @@
       "}",
       "",
       "// ======================================",
-      "// BAHAYA DELETE TANPA WHERE",
+      "// ⚠️ COMMON MISTAKE",
       "// ======================================",
       "// DELETE FROM users; <- HAPUS SEMUA DATA!",
       "// SELALU gunakan WHERE!",
       "",
       "// ======================================",
-      "// SOFT DELETE (ALTERNATIF LEBIH AMAN)",
+      "// 💡 BEST PRACTICE",
       "// ======================================",
       "// UPDATE users SET deleted_at = NOW() WHERE id = 1;",
       "// Data tidak terhapus fisik, bisa di-restore"
     ],
     "description": "PDO UPDATE & DELETE dengan prepared statement"
   },
-
   "PHP Advanced - Trait Basic": {
     "scope": "php",
     "prefix": "edu-trait",
@@ -943,7 +944,6 @@
     ],
     "description": "Trait dasar PHP + penjelasan"
   },
-
   "PHP Advanced - Multiple Traits": {
     "scope": "php",
     "prefix": "edu-trait-multiple",
@@ -951,6 +951,14 @@
       "// ======================================",
       "// PHP - MULTIPLE TRAITS",
       "// ======================================",
+      "",
+      "// ======================================",
+      "// PENJELASAN",
+      "// ======================================",
+      "// Satu class bisa pakai lebih dari satu trait",
+      "// Trait memungkinkan reuse kode tanpa inheritance",
+      "// Berguna untuk fungsionalitas lintas class (logging, validasi, dll)",
+      "",
       "",
       "trait ${1:Loggable} {",
       "  public function log($${2:message}) {",
@@ -1000,7 +1008,6 @@
     ],
     "description": "Multiple traits & conflict resolution + penjelasan"
   },
-
   "PHP Advanced - PDO Transaction": {
     "scope": "php",
     "prefix": "edu-pdo-transaction",
@@ -1044,7 +1051,7 @@
       "// - Delete parent record + semua child records",
       "",
       "// ======================================",
-      "// ACID",
+      "// PERBANDINGAN KONSEP (ACID)",
       "// ======================================",
       "// A - Atomicity: semua atau tidak sama sekali",
       "// C - Consistency: data tetap valid",

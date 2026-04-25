@@ -83,19 +83,6 @@ const SNIPPET_LIST = [
   { label: '$(extensions) edu-trait',             description: 'Trait dasar',                 prefix: 'edu-trait',             kategori: 'PHP Advanced',        lang: 'php' },
   { label: '$(extensions) edu-trait-multiple',    description: 'Multiple traits',             prefix: 'edu-trait-multiple',    kategori: 'PHP Advanced',        lang: 'php' },
 
-  // Compare JS vs PHP
-  { label: '$(diff) edu-compare-var',             description: 'Perbandingan variabel',       prefix: 'edu-compare-var',       kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-datatype',        description: 'Perbandingan tipe data',      prefix: 'edu-compare-datatype',  kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-operator',        description: 'Perbandingan operator',       prefix: 'edu-compare-operator',  kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-if',              description: 'Perbandingan if statement',   prefix: 'edu-compare-if',        kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-switch',          description: 'Perbandingan switch',         prefix: 'edu-compare-switch',    kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-loop',            description: 'Perbandingan loop',           prefix: 'edu-compare-loop',      kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-break',           description: 'Perbandingan break & continue', prefix: 'edu-compare-break',   kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-array',           description: 'Perbandingan array',          prefix: 'edu-compare-array',     kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-func',            description: 'Perbandingan function',       prefix: 'edu-compare-func',      kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-object',          description: 'Perbandingan object',         prefix: 'edu-compare-object',    kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-output',          description: 'Perbandingan output',         prefix: 'edu-compare-output',    kategori: 'Compare JS vs PHP',   lang: 'both' },
-  { label: '$(diff) edu-compare-exec',            description: 'Perbandingan eksekusi',       prefix: 'edu-compare-exec',      kategori: 'Compare JS vs PHP',   lang: 'both' },
 ];
 
 // ======================================================
@@ -105,7 +92,6 @@ function loadSnippetBodies(extensionPath) {
   const files = {
     javascript: ['javascript.json', 'javascript-advanced.json'],
     php: ['php.json', 'php-oop.json'],
-    both: ['javascript-php-compare.json'],
   };
 
   const bodies = {}; // key: "prefix_lang"
@@ -134,9 +120,6 @@ function loadSnippetBodies(extensionPath) {
 function resolveBody(bodies, prefix, lang) {
   // Coba exact match dulu (mis. edu-var_javascript)
   if (bodies[`${prefix}_${lang}`]) return bodies[`${prefix}_${lang}`];
-  // Fallback ke both (compare snippets)
-  if (bodies[`${prefix}_both`]) return bodies[`${prefix}_both`];
-  return null;
 }
 
 // ======================================================
@@ -152,7 +135,6 @@ function bodyToSnippetString(bodyLines) {
 // ======================================================
 function filterByLanguage(currentLang) {
   return SNIPPET_LIST.filter(item => {
-    if (item.lang === 'both') return true;
     if (item.lang === 'javascript' && currentLang === 'javascript') return true;
     if (item.lang === 'php' && currentLang === 'php') return true;
     return false;
@@ -226,7 +208,7 @@ function activate(context) {
       }
 
       // Resolve body snippet
-      const langKey = picked._lang === 'both' ? 'both' : currentLang;
+      const langKey = currentLang;
       const body = resolveBody(snippetBodies, picked._prefix, langKey);
 
       if (!body) {
