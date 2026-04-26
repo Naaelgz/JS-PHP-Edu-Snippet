@@ -3,12 +3,25 @@
   "displayName": "Edu Snippet JS & PHP",
   "description": "Snippet edukatif untuk JavaScript dan PHP dengan penjelasan konsep dan perbandingan antar bahasa. Cocok untuk mahasiswa dan pemula programming.",
   "version": "1.4.0",
+  "publisher": "NaaelGZ",
+  "icon": "images/icon.png",
+  "license": "MIT",
+  "keywords": ["javascript", "php", "snippet", "education", "pemula", "belajar"],
+  "galleryBanner": {
+    "color": "#1a2744",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Naaelgz/JS-PHP-Edu-Snippet.git"
+  },
   "engines": {
     "vscode": "^1.109.0"
   },
   "categories": [
     "Snippets",
-    "Education"
+    "Education",
+    "Other"
   ],
   "activationEvents": [],
   "main": "./extension.js",
