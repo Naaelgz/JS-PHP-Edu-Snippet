@@ -4,7 +4,7 @@ Extension Visual Studio Code yang menyediakan snippet edukatif untuk JavaScript 
 
 ## Fitur
 
-- **21 Snippet JavaScript Dasar** — variabel hingga array map/filter
+- **19 Snippet JavaScript Dasar** — variabel hingga array map/filter
 - **12 Snippet JavaScript Advanced** — Class ES6, Promise, async/await, destructuring, spread/rest, template literals, map, filter
 - **21 Snippet PHP Dasar** — variabel hingga array map/filter
 - **7 Snippet PHP OOP** — Class, Constructor, Encapsulation, Inheritance, Polymorphism, Interface, Abstract
